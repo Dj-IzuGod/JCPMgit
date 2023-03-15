@@ -1,0 +1,168 @@
+header {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(kaleb-nimz--5rA4DRrEXU-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.firstThing {
+  margin: -6% 10%;
+  font-family: "Roboto", sans-serif;
+  padding: 10%;
+  color: antiquewhite;
+}
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  color: grey;
+}
+.nav-link {
+  color: aliceblue;
+}
+.nav-link:hover {
+  color: grey;
+}
+#first-a {
+  color: aliceblue;
+}
+.days {
+  background: linear-gradient(
+        to right,
+        rgba(231, 191, 14, 0.911) 10%,
+        rgba(224, 35, 10, 0.274) 50%
+      )
+      50%,
+    url(Days.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 10%;
+  width: 30%;
+}
+
+h2 {
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+}
+.watch {
+  background: yellow;
+  padding: 40px;
+  background: linear-gradient(
+        to right,
+        rgba(231, 191, 14, 0.911) 10%,
+        rgba(224, 35, 10, 0.274) 50%
+      )
+      50%,
+    url(eventPics.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10%;
+  width: 30%;
+}
+.give {
+  background: blue;
+  padding: 40px;
+  background: linear-gradient(
+        to right,
+        rgba(231, 191, 14, 0.911) 10%,
+        rgba(224, 35, 10, 0.274) 50%
+      )
+      50%,
+    url(tithes.png);
+  border-radius: 10%;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  width: 30%;
+}
+#online {
+  font-size: 3rem;
+  color: aliceblue;
+  text-align: center;
+}
+#online:hover {
+  color: rgb(173, 226, 49);
+}
+.row {
+  margin: 10px auto;
+  justify-content: space-between;
+  text-align: center;
+  position: absolute;
+  margin-left: -2%;
+  padding-right: 8%;
+}
+.link {
+  text-decoration: none;
+  transition: 0.4;
+  color: aliceblue;
+}
+.link:hover {
+  color: rgb(173, 226, 49);
+}
+.programSide {
+  margin-top: 35%;
+  background-color: #ecf0f1;
+  text-align: center;
+  width: 80%;
+  margin: 35% auto;
+  padding-bottom: 20%;
+}
+
+/* Mobile screen */
+
+@media screen and (max-width: 700px) {
+  .firstThing {
+    margin-top: 50px;
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .logoPics {
+    width: 70px;
+    height: 70px;
+    line-height: 10%;
+  }
+  hr {
+    margin: -0px;
+    margin-left: 95px;
+    height: 3px;
+    background: orange;
+    align-items: center;
+  }
+  .first-p {
+    text-align: center;
+  }
+  .col-md-3 {
+    border-radius: 10%;
+    margin-bottom: 5%;
+    width: 20rem;
+  }
+  .row {
+    flex-direction: column;
+    position: absolute;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-left: -4%;
+  }
+  #online {
+    font-size: 2rem;
+    color: aliceblue;
+    text-align: center;
+  }
+  .programSide {
+    margin-top: 1rem;
+    background-color: #ecf0f1;
+    text-align: center;
+    width: 100%;
+    margin: 145% auto;
+    padding-bottom: 20%;
+    position: absolute;
+  }
+}
