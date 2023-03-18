@@ -2,9 +2,9 @@ header {
   background: linear-gradient(
       to right,
       rgba(235, 61, 61, 0.918) 20%,
-      rgba(230, 50, 50, 0.5) 30%
+      rgba(230, 50, 50, 0.5) 90%
     ),
-    url(crowd2.jpg);
+    url(crowd2dark.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -192,7 +192,7 @@ a {
   width: 100%;
   padding: 2%;
   position: absolute;
-  margin: 35% auto;
+  margin: 30% auto;
   border: none;
 }
 .daddyPics {
@@ -209,6 +209,18 @@ a {
 }
 .pastTopics p {
   color: aliceblue;
+}
+.socialMedia {
+  background: linear-gradient(to right, rgb(255, 174, 0) 20%, rgb(255, 81, 0));
+  background-position: center;
+  background-size: cover;
+  width: 80%;
+  margin: 90% auto 10%;
+  padding-bottom: 3%;
+  border-radius: 35px;
+  color: aliceblue;
+  text-align: center;
+  box-shadow: 10px 10px 10px grey;
 }
 
 /* Mobile screen */
@@ -272,7 +284,7 @@ a {
 
   /* For the big picture section */
   .bigRow {
-    margin: 700% auto;
+    margin: 630% auto 0%;
     position: absolute;
   }
   .daddyPics {
@@ -284,6 +296,11 @@ a {
   }
   .pastTopics {
     margin: auto;
-    width: auto;
+    width: fit-content;
+    height: 500px;
+  }
+  .socialMedia {
+    margin: 860% auto 10%;
+    text-align: center;
   }
 }
