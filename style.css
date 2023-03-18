@@ -222,6 +222,13 @@ a {
   text-align: center;
   box-shadow: 10px 10px 10px grey;
 }
+i {
+  padding: 0 10%;
+  transition: 0.3s;
+}
+i:hover {
+  transform: scale(3, 3);
+}
 
 /* Mobile screen */
 
