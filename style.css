@@ -310,4 +310,8 @@ i:hover {
     margin: 860% auto 10%;
     text-align: center;
   }
+  i {
+    padding: 0 5%;
+    transition: 0.3s;
+  }
 }
