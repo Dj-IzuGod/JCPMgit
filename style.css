@@ -314,11 +314,14 @@ i:hover {
     padding: 0 5%;
     transition: 0.3s;
   }
+  .last {
+    font-size: 12px;
+  }
 }
 
 /* View for Ipad */
 
-@media screen and (min-width: 1100px) {
+@media screen and (max-width: 1100px) and (min-width: 700px) {
   .programSide {
     margin-top: 1rem;
     text-align: center;
