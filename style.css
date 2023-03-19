@@ -315,3 +315,23 @@ i:hover {
     transition: 0.3s;
   }
 }
+
+/* View for Ipad */
+
+@media screen and (min-width: 1100px) {
+  .programSide {
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    margin: 45% auto;
+    padding-bottom: 20%;
+  }
+  .socialMedia {
+    margin: 120% auto 10%;
+    text-align: center;
+  }
+  .bigRow {
+    margin: -10% auto 0%;
+    position: absolute;
+  }
+}
