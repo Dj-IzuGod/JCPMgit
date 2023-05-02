@@ -63,7 +63,7 @@ a.nav-link:hover {
   background-size: cover;
   padding: 40px;
   font-family: "Open Sans", sans-serif;
-  border-radius: 10%;
+  border-radius: 25px;
   width: 30%;
 }
 
@@ -83,7 +83,7 @@ h2 {
     url(eventPics.jpg);
   background-position: center;
   background-size: cover;
-  border-radius: 10%;
+  border-radius: 25px;
   width: 30%;
 }
 .give {
@@ -96,7 +96,7 @@ h2 {
       )
       50%,
     url(tithes.png);
-  border-radius: 10%;
+  border-radius: 25px;
   background-position: center;
   background-size: cover;
   text-align: center;
