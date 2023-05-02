@@ -1,21 +1,26 @@
 header {
   background: linear-gradient(
       to right,
-      rgba(235, 61, 61, 0.918) 20%,
-      rgba(230, 50, 50, 0.5) 90%
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 90%
     ),
-    url(crowd2dark.jpg);
+    url(kaleb-nimz--5rA4DRrEXU-unsplash.jpg);
   background-position: center;
   background-size: cover;
 }
 .logoPics {
   border-radius: 60%;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 .firstThing {
   margin: -6% 10%;
   font-family: "Roboto", sans-serif;
   padding: 10%;
   color: antiquewhite;
+  opacity: 0;
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
 }
 h1 {
   font-size: 4rem;
@@ -24,15 +29,28 @@ h1 {
 p {
   color: grey;
 }
-.nav-link {
+a.nav-link {
   color: rgb(255, 251, 0);
+  transition: 0.4s ease;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
-.nav-link:hover {
+a.nav-link:hover {
   color: rgb(235, 2, 2);
+  font-weight: 500;
 }
 #first-a {
-  color: aliceblue;
+  color: rgba(235, 2, 2, 0.671);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
 }
+
 .days {
   background: linear-gradient(
         to right,
@@ -108,7 +126,7 @@ h2 {
   color: rgb(247, 0, 0);
 }
 
-/* From the 21 days section */
+/*------------------ From the 21 days section------------ */
 
 .program {
   margin-top: 0%;
@@ -117,6 +135,9 @@ h2 {
   width: 80%;
   margin: 35% auto 3%;
   padding-bottom: 3%;
+}
+.program p {
+  margin: 0 50px 0;
 }
 .prayer {
   padding: 15px 20px;
@@ -156,7 +177,7 @@ a {
   padding: 10px 25px;
 }
 
-/* AFTER SOWING SEED */
+/*----------- AFTER SOWING SEED-------- */
 .secondRow {
   margin: 5px auto;
   justify-content: space-between;
@@ -197,6 +218,10 @@ a {
 }
 .daddyPics {
   width: 350px;
+  filter: drop-shadow(50px);
+  filter: blur();
+  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation-delay: 2s, 3s;
 }
 .pastTopics {
   background: linear-gradient(to right, rgb(255, 174, 0) 20%, rgb(255, 81, 0));
@@ -221,6 +246,9 @@ a {
   color: aliceblue;
   text-align: center;
   box-shadow: 10px 10px 10px grey;
+  opacity: 0;
+  animation: slideLeft 1s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
 }
 i {
   padding: 0 10%;
@@ -228,6 +256,58 @@ i {
 }
 i:hover {
   transform: scale(3, 3);
+}
+/* ------------KEYFRAME'S ANIMATION------------ */
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-24px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Mobile screen */
