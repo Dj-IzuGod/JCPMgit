@@ -1,4 +1,4 @@
-header {
+body {
   background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.5) 50%,
@@ -8,16 +8,29 @@ header {
   background-position: center;
   background-size: cover;
 }
+div {
+  padding: 0;
+  margin: 25px auto;
+  font-family: Merriweather;
+}
+table {
+  text-align: left;
+}
+
 .logoPics {
   border-radius: 60%;
   opacity: 0;
   animation: slideRight 1s ease forwards;
 }
 .firstThing {
-  margin: -6% 10%;
+  background: rgba(54, 48, 48, 0.5);
+  width: 50%;
+  height: 40%;
+  border-radius: 25px;
   font-family: "Roboto", sans-serif;
-  padding: 10%;
+  padding: 5%;
   color: antiquewhite;
+  text-align: left;
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
   animation-delay: 2s, 3s;
@@ -257,6 +270,9 @@ i {
 i:hover {
   transform: scale(3, 3);
 }
+footer {
+  margin-top: 50%;
+}
 /* ------------KEYFRAME'S ANIMATION------------ */
 @keyframes slideRight {
   0% {
@@ -400,6 +416,34 @@ i:hover {
 
   .bigSec {
     margin-top: 30%;
+  }
+  div {
+    padding: 0;
+    margin: 25px auto;
+    font-family: Merriweather;
+  }
+  table {
+    text-align: left;
+    border-spacing: 2px solid black;
+  }
+
+  .logoPics {
+    border-radius: 60%;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  .firstThing {
+    background: rgba(54, 48, 48, 0.5);
+    width: 70%;
+    height: 40%;
+    border-radius: 25px;
+    font-family: "Roboto", sans-serif;
+    padding: 5%;
+    color: antiquewhite;
+    text-align: left;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
   }
 }
 
