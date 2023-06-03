@@ -343,7 +343,7 @@ i:hover {
   .row {
     flex-direction: column;
     position: absolute;
-    margin: 0 auto;
+    margin: 10 auto;
     justify-content: space-between;
     margin-left: -4%;
   }
