@@ -267,6 +267,12 @@ i:hover {
   transform: scale(3, 3);
   transition: 0.3s ease-in-out;
 }
+.index-foot {
+  bottom: 10%;
+}
+footer .index-foot {
+  bottom: 0px;
+}
 /* ------------KEYFRAME'S ANIMATION------------ */
 @keyframes slideRight {
   0% {
@@ -381,7 +387,7 @@ i:hover {
 
   /* For the big picture section */
   .bigRow {
-    margin: 630% auto 0%;
+    margin: 15% auto 0%;
     position: absolute;
   }
   .daddyPics {
@@ -397,7 +403,7 @@ i:hover {
     height: 500px;
   }
   .socialMedia {
-    margin: 880% auto 10%;
+    margin: 280% auto 0%;
     text-align: center;
   }
   i {
@@ -424,6 +430,9 @@ i:hover {
     right: 0;
     padding-left: 20%;
   }
+  footer .index-foot {
+    margin-bottom: -90px;
+  }
 }
 
 /* View for Ipad */
@@ -432,16 +441,18 @@ i:hover {
   .programSide {
     margin-top: 1rem;
     text-align: center;
-    width: 100%;
+
     margin: 45% auto;
-    padding-bottom: 20%;
   }
   .socialMedia {
     margin: 120% auto 10%;
     text-align: center;
   }
   .bigRow {
-    margin: -10% auto 0%;
+    margin: 30% auto 0%;
     position: absolute;
+  }
+  .index-foot {
+    margin-bottom: -368px;
   }
 }
