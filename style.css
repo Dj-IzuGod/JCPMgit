@@ -16,11 +16,15 @@ button:hover {
   border-radius: 60%;
   opacity: 0;
   animation: slideRight 1s ease forwards;
+  cursor: pointer;
+}
+a .navbar-brand {
+  cursor: pointer;
 }
 .firstThing {
-  margin: -6% 10%;
+  margin: 0% 15%;
   font-family: "Roboto", sans-serif;
-  padding: 10%;
+  padding: 5%;
   color: antiquewhite;
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
@@ -44,7 +48,7 @@ a.nav-link {
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
-a.nav-link:hover {
+li a.nav-link:hover {
   color: rgb(235, 2, 2);
   font-weight: 500;
 }
@@ -123,7 +127,7 @@ h2 {
 }
 .link {
   text-decoration: none;
-  transition: 0.4;
+  transition: 0.4s;
   color: aliceblue;
 }
 .link:hover {
@@ -454,5 +458,27 @@ footer .index-foot {
   }
   .index-foot {
     margin-bottom: -368px;
+  }
+  .row {
+    margin: -32px auto;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+    padding-right: 8%;
+  }
+  .give {
+    padding: 0px;
+    background: linear-gradient(
+          to right,
+          rgba(231, 191, 14, 0.911) 10%,
+          rgba(131, 15, 0, 0.603) 50%
+        )
+        50%,
+      url(tithes.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 30%;
   }
 }
