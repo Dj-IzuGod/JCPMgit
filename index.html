@@ -192,8 +192,8 @@
           Palmphlet<br />God bless you!
         </p>
         <br />
-        <button class="prayer">
-          <a href="Palmphlets.pdf">Prayer Palmphlet</a>
+        <button class="prayer" id="alertButton">
+          <a href="#" id="prayer">Prayer Palmphlet</a>
         </button>
       </div>
       <div class="program" style="margin-top: 10px">
@@ -368,6 +368,27 @@
         window.addEventListener("load", function () {
           var animationDiv = document.getElementById("animationDiv");
           animationDiv.classList.add("show");
+        });
+        document
+          .getElementsById("prayer")
+          .addEventListener("click", function () {
+            alert("Sorry this unavailable right now.");
+          });
+
+        var button = document.getElementById("prayer");
+
+        // Add a click event listener to the button
+        button.addEventListener("click", function () {
+          alert("Button clicked! This is an alert.");
+        });
+      </script>
+      <script>
+        // Get a reference to the button element
+        var button = document.getElementById("prayer");
+
+        // Add a click event listener to the button
+        button.addEventListener("click", function () {
+          alert("Sorry this unavailable right now.");
         });
       </script>
 
