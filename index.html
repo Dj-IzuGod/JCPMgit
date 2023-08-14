@@ -63,7 +63,52 @@
     />
   </head>
   <body>
-    <header>
+    <div class="splash-screen">
+      <div
+        class="modal modal-sheet position-static d-block p-4 py-md-5"
+        tabindex="-1"
+        role="dialog"
+        id="modalSheet"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-4 shadow">
+            <div class="modal-header border-bottom-0">
+              <h1 class="modal-title fs-5">JOIN US NOW!!</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                id="close"
+              ></button>
+            </div>
+            <div class="modal-body py-0">
+              <p>
+                On our 31 DAYS PRAYER PROGRAM
+                <br />
+                Theme: Morning Dew.<br />
+                Time: 8am - 9am<br />
+                Venue: No 4 Igbowe street, Abakaliki.
+              </p>
+            </div>
+            <div
+              class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0"
+            >
+              <button
+                type="button"
+                class="btn btn-lg btn-secondary"
+                data-bs-dismiss="modal"
+                aria-required="true"
+                id="ok"
+              >
+                Ok
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="main-content">
       <div class="main">
         <nav class="navbar navbar-expand-lg bg-body-primary">
           <div class="container">
@@ -181,20 +226,28 @@
 
     <!-- 21 day Program -->
     <section class="programSide">
-      <div class="program">
-        <br />
-        <h3 style="font-family: 'Tilt Warp', cursive">JCPC 21 DAYS PROGRAM</h3>
-        <br />
-        <p>
-          The JCPC 21 days Program as announced by our Father in the Lord,
-          Pastor Collins Edeh usually takes place between January and February
-          every year.<br />Please, click the button below to get the Prayer
-          Palmphlet<br />God bless you!
-        </p>
-        <br />
-        <button class="prayer" id="alertButton">
-          <a href="#" id="prayer">Prayer Palmphlet</a>
-        </button>
+      <div class="overlay" id="overlay">
+        <div class="modal">
+          <p>This is a styled custom modal dialog.</p>
+          <button id="closeButton">Close</button>
+        </div>
+        <div class="program">
+          <br />
+          <h3 style="font-family: 'Tilt Warp', cursive">
+            JCPC 21 DAYS PROGRAM
+          </h3>
+          <br />
+          <p>
+            The JCPC 21 days Program as announced by our Father in the Lord,
+            Pastor Collins Edeh usually takes place between January and February
+            every year.<br />Please, click the button below to get the Prayer
+            Palmphlet<br />God bless you!
+          </p>
+          <br />
+          <button class="prayer" id="alertButton">
+            <a href="#" id="prayer">Prayer Palmphlet</a>
+          </button>
+        </div>
       </div>
       <div class="program" style="margin-top: 10px">
         <br />
@@ -389,6 +442,48 @@
         // Add a click event listener to the button
         button.addEventListener("click", function () {
           alert("Sorry, this unavailable right now.");
+        });
+      </script>
+      <script>
+        // Simulate a delay to hide the splash screen and show the main content
+        window.addEventListener("load", function () {
+          var splashScreen = document.querySelector(".splash-screen");
+          var mainContent = document.querySelector(".main-content");
+
+          // setTimeout(function () {
+          //   splashScreen.style.display = "none";
+          //   mainContent.style.display = "block";
+          // }, 2000); // Change the delay (in milliseconds) as needed
+        });
+      </script>
+      <script>
+        // Simulate a delay to hide the splash screen and show the main content
+        window.addEventListener("load", function () {
+          var splashScreen = document.querySelector(".splash-screen");
+          var mainContent = document.querySelector(".main-content");
+
+          var button = document.getElementById("close");
+
+          // Add a click event listener to the button
+          button.addEventListener("click", function () {
+            splashScreen.style.display = "none";
+            mainContent.style.display = "block";
+          });
+        });
+      </script>
+      <script>
+        // Simulate a delay to hide the splash screen and show the main content
+        window.addEventListener("load", function () {
+          var splashScreen = document.querySelector(".splash-screen");
+          var mainContent = document.querySelector(".main-content");
+
+          var button = document.getElementById("ok");
+
+          // Add a click event listener to the button
+          button.addEventListener("click", function () {
+            splashScreen.style.display = "none";
+            mainContent.style.display = "block";
+          });
         });
       </script>
 
