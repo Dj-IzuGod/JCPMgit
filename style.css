@@ -8,7 +8,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.5) 90%
+  );
   z-index: 9999; /* Ensure the splash screen appears above everything else */
 }
 
@@ -23,12 +27,7 @@
   display: none; /* Initially hide the main content */
 }
 header {
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5) 50%,
-      rgba(0, 0, 0, 0.5) 90%
-    ),
-    url(kaleb-nimz--5rA4DRrEXU-unsplash.jpg);
+  background: cc, url(kaleb-nimz--5rA4DRrEXU-unsplash.jpg);
   background-position: center;
   background-size: cover;
 }
