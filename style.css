@@ -1,3 +1,11 @@
+.navbar {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(0, 0, 0, 0.5) 90%
+  );
+}
+
 /* Style for the splash screen */
 .splash-screen {
   display: flex;
@@ -52,7 +60,7 @@ a .navbar-brand {
 .firstThing {
   margin: 0% 15%;
   font-family: "Roboto", sans-serif;
-  padding: 5%;
+  padding: 13% 5% 5%;
   color: antiquewhite;
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;

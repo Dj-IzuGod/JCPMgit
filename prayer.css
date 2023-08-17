@@ -52,6 +52,7 @@ a.nav-link {
   opacity: 0;
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
+  font-family: sans-serif;
 }
 a.nav-link:hover {
   color: rgb(235, 2, 2);
