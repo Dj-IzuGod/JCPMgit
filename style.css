@@ -4,6 +4,7 @@
     rgba(0, 0, 0, 0.5) 50%,
     rgba(0, 0, 0, 0.5) 90%
   );
+  z-index: 9999;
 }
 
 header {
@@ -342,7 +343,7 @@ footer .index-foot {
 
 @media screen and (max-width: 700px) {
   .firstThing {
-    margin-top: 50px;
+    margin-top: 0px;
   }
   h1 {
     font-size: 2.5rem;
